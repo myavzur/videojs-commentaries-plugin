@@ -1,0 +1,41 @@
+.comment {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-primary-900);
+}
+
+/* Avatar */
+.comment__avatar {
+  align-self: flex-start;
+  width: 2.8em;
+  height: 2.8em;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 0 0.25em var(--color-secondary);
+}
+.comment__avatar img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Information
+  Name
+  Content
+*/
+.comment__info {
+  width: 100%;
+  margin-left: 1rem;
+}
+
+.comment__info-name {
+  color: var(--color-text-primary);
+}
+.comment__info-content {
+  margin-top: 0.5rem;
+  font-size: small;
+  color: var(--color-text-secondary);
+}
+

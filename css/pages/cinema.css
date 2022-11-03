@@ -1,0 +1,15 @@
+.cinema {
+  background-color: var(--color-primary-900);
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.cinema__video {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+.cinema__video:last-child {
+  margin-bottom: 0;
+}

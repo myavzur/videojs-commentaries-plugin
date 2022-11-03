@@ -1,0 +1,9 @@
+body {
+  --color-primary-800: #3b3b3b;
+  --color-primary-900: #171717;
+  --color-secondary: rgb(61, 84, 255);
+  --color-thirdly: #fff;
+
+  --color-text-primary: #fff;
+  --color-text-secondary: rgb(153, 153, 153)
+}

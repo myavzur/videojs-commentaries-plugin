@@ -1,0 +1,50 @@
+.video {
+  width: 100%;
+  border-radius: 2rem;
+  border: 0.5rem solid var(--color-secondary);
+  overflow: hidden;
+}
+.video .video-js {
+  width: 100%;
+}
+.video.video--playing .video__comments {
+  display: block;
+}
+
+.video__comments {
+  display: none;
+}
+/* 
+  ================
+    Comments Form
+  ================
+*/
+.video__comments-form {
+  width: 100%;
+  border-bottom: 3px solid var(--color-secondary);
+}
+.video__comments-form input {
+  color: inherit;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  background-color: var(--color-primary-800);
+}
+
+
+/* 
+  ================
+    Comments List
+  ================
+*/
+.video__comments-list {
+  max-height: 25rem;
+  overflow-y: scroll;
+}
+.video__comments-list > .comment {
+  border-bottom: 1px solid #fff;
+}
+.video__comments-list > .comment:last-child {
+  border-bottom: none;
+}

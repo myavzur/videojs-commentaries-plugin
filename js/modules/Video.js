@@ -1,6 +1,6 @@
-/** 
+/**
  * Creates Video.
- * Make sure that you are call .render() method 
+ * Make sure that you are call .render() method
  * if you want it to be displayed in your {parentElement}
  * @param {Video} data
  * @param {HTMLElement} parentElement
@@ -14,7 +14,7 @@ class Video {
     this.elements = null // render() will place it with {player, playeelementsent}
   }
 
-  /** @public 
+  /** @public
    * * Add new comment of current Video to localStorage
   */
   handleAddComment = (comment) => {
@@ -25,7 +25,7 @@ class Video {
       comment,
       ...videos[idx].comments
     ]
-    
+
     localStorage.setItem('videos', JSON.stringify(videos))
   }
 

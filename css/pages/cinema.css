@@ -1,5 +1,6 @@
 .cinema {
   background-color: var(--color-primary-900);
+  padding-top: 80px;
   width: 100vw;
   min-height: 100vh;
   display: flex;

@@ -1,37 +1,37 @@
 const mockVideos = [
   {
     id: 1,
-    src: ['/assets/videos/every-night.mp4'],
+    src: ['assets/videos/every-night.mp4'],
     comments: [
       {
         id: 1,
         content: 'Damn this sounds amazing',
         user: {
           name: 'Perfect',
-          avatarPath: '/assets/images/perfect.jpg',
+          avatarPath: 'assets/images/perfect.jpg',
         }
       }
     ]
   },
   {
     id: 2,
-    src: ['/assets/videos/last-hero.mp4'],
+    src: ['assets/videos/last-hero.mp4'],
     comments: [
       {
         id: 1,
         content: 'I love Kino and Victor Coy, especially Last Hero (Posledniy Geroy) track!',
         user: {
           name: 'Perfect',
-          avatarPath: '/assets/images/perfect.jpg',
+          avatarPath: 'assets/images/perfect.jpg',
         }
       }
     ]
   },
   {
     id: 3,
-    src: ['/assets/videos/childhood.mp4'],
+    src: ['assets/videos/childhood.mp4'],
     comments: [
-      
+
     ]
   }
 ]
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
       name: null,
       avatarPath: null
     }
-  
+
     while (!user.name) {
       user.name = prompt('Enter your name. Required!')
     }
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (!localStorage.getItem('videos')) {
     localStorage.setItem('videos', JSON.stringify(mockVideos))
-  } 
+  }
   const videos = JSON.parse(localStorage.getItem('videos'))
 
 
